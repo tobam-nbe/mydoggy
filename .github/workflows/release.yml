@@ -31,4 +31,5 @@ jobs:
       uses: jaywcjlove/github-action-upload-assets@main
       if: steps.publish_package.outcome == 'success'
       with:
-        asset-path: '["./mydoggy-api/target/*.jar"]'
+        asset-path: '["./mydoggy-api/target/*.jar", "./mydoggy-examples/target/*.jar", "./mydoggy-plaf/target/*.jar", "./mydoggy-res/target/*.jar", "./mydoggy-site-skin/target/*.jar"]'
+        
